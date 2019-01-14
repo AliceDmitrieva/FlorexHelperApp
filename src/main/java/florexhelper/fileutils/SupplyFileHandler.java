@@ -47,20 +47,48 @@ public class SupplyFileHandler {
                     String flowerPrice = flower.getPrice();
 
                     if (flowerLength.contains("-") || flowerLength.contains("/")) {
-                        flower.setLength(setDoubleLengthFirstFlower(flowerLength));
-                        if (flowerPrice != null) {
-                            flower.setPrice(setDoublePriceFirstFlower(flowerPrice));
-                        }
-                        flower.setCountOfBox(flower.getCountOfBox() / 2);
-                        flowerList.add(flower);
+                        int dashCount = checkDoubleCounts(flowerLength);
 
-                        Flower copiedFlower = flower.copy(flower);
-                        copiedFlower.setLength(setDoubleLengthSecondFlower(flowerLength));
-                        if (flowerPrice != null) {
-                            copiedFlower.setPrice(setDoublePriceSecondFlower(flowerPrice));
-                        }
-                        flowerList.add(copiedFlower);
+                        if (dashCount == 1) {
+                            flower.setLength(setDoubleLengthFirstFlower(flowerLength));
+                            if (flowerPrice != null) {
+                                flower.setPrice(setDoublePriceFirstFlower(flowerPrice));
+                            }
+                            flower.setCountOfBox(flower.getCountOfBox() / 2);
+                            flowerList.add(flower);
 
+                            Flower copiedFlower = flower.copy(flower);
+                            copiedFlower.setLength(setDoubleLengthSecondFlower(flowerLength));
+                            if (flowerPrice != null) {
+                                copiedFlower.setPrice(setDoublePriceSecondFlower(flowerPrice));
+                            }
+                            flowerList.add(copiedFlower);
+                        }
+                        if (dashCount == 2) {
+                            flower.setLength(setDoubleLengthFirstFlower(flowerLength));
+                            if (flowerPrice != null) {
+                                flower.setPrice(setDoublePriceFirstFlower(flowerPrice));
+                            }
+                            flower.setCountOfBox(flower.getCountOfBox() / 3);
+                            flowerList.add(flower);
+
+                            Flower copiedSecondFlower = flower.copy(flower);
+                            copiedSecondFlower.setLength(setDoubleLengthSecondFlower(flowerLength));
+                            if (flowerPrice != null) {
+                                copiedSecondFlower.setPrice(setDoublePriceSecondFlower(flowerPrice));
+                            }
+                            flowerList.add(copiedSecondFlower);
+
+                            int thirdFlowerLength = Integer.parseInt(copiedSecondFlower.getLength()) + (Integer.parseInt(copiedSecondFlower.getLength()) - Integer.parseInt(flower.getLength()));
+                            double thirdFlowerPrice = Double.parseDouble(copiedSecondFlower.getPrice()) + (Double.parseDouble(copiedSecondFlower.getPrice()) - Double.parseDouble(flower.getPrice()));
+
+                            Flower copiedThirdFlower = copiedSecondFlower.copy(copiedSecondFlower);
+                            copiedThirdFlower.setLength(String.valueOf(thirdFlowerLength));
+                            if (flowerPrice != null) {
+                                copiedThirdFlower.setPrice(String.valueOf(thirdFlowerPrice));
+                            }
+                            flowerList.add(copiedThirdFlower);
+                        }
                     } else {
                         flowerList.add(flower);
                     }
@@ -68,6 +96,17 @@ public class SupplyFileHandler {
             }
         }
         return flowerList;
+    }
+
+    private static int checkDoubleCounts(String length) {
+        int flowerCount = 0;
+        char[] lengthCharArray = length.toCharArray();
+        for (int i = 0; i < lengthCharArray.length; i++) {
+            if ((lengthCharArray[i] == '-') || (lengthCharArray[i] == '/')) {
+                flowerCount++;
+            }
+        }
+        return flowerCount;
     }
 
     public static String setDoubleLengthFirstFlower(String flowerLength) {
@@ -149,8 +188,7 @@ public class SupplyFileHandler {
         Pattern boxPattern = Pattern.compile("[1-9][0-9]?[\\s|\\t]?[\\s]?[Q|H][B]");
         Pattern titlePattern = Pattern.compile("[a-zA-Z]+[\\s?[a-zA-Z]?]+");
         Pattern lengthPattern = Pattern.compile("([\\s][1-9][0-9][0]?[\\-|/][1-9][0-9][0]?[\\-|/][1-9][0-9][0]?)|([\\s][1-9][0-9][0]?[\\-|/][1-9][0-9][0]?)|([\\s][1-9][0-9][0]?)");
-//        Pattern pricePattern = Pattern.compile("([0-1][\\.][1-9][0-9][\\/][0-1][\\.][1-9][0-9][\\/][0-1][\\.][1-9][0-9])|([0-1][\\.][1-9][0-9][\\/][0-1][\\.][1-9][0-9])|([0-1][\\.][1-9][0-9])");
-        Pattern pricePattern = Pattern.compile("([0-1][,|.][1-9][0-9][\\-|/][0-1][,|.][1-9][0-9])|([0-1][,|.][1-9][0-9])");
+        Pattern pricePattern = Pattern.compile("([0-1][,|.][1-9][0-9][\\-|/][0-1][,|.][1-9][0-9][\\-|/][0-1][,|.][1-9][0-9])|([0-1][,|.][1-9][0-9][\\-|/][0-1][,|.][1-9][0-9])|([0-1][,|.][1-9][0-9])");
 
         Matcher boxPatternMatcher = boxPattern.matcher(source);
         Matcher titlePatternMatcher = titlePattern.matcher(source);
