@@ -80,11 +80,10 @@ public class SupplyFileHandler {
                             flowerList.add(copiedSecondFlower);
 
                             int thirdFlowerLength = Integer.parseInt(copiedSecondFlower.getLength()) + (Integer.parseInt(copiedSecondFlower.getLength()) - Integer.parseInt(flower.getLength()));
-                            double thirdFlowerPrice = Double.parseDouble(copiedSecondFlower.getPrice()) + (Double.parseDouble(copiedSecondFlower.getPrice()) - Double.parseDouble(flower.getPrice()));
-
                             Flower copiedThirdFlower = copiedSecondFlower.copy(copiedSecondFlower);
                             copiedThirdFlower.setLength(String.valueOf(thirdFlowerLength));
                             if (flowerPrice != null) {
+                                double thirdFlowerPrice = Double.parseDouble(copiedSecondFlower.getPrice()) + (Double.parseDouble(copiedSecondFlower.getPrice()) - Double.parseDouble(flower.getPrice()));
                                 copiedThirdFlower.setPrice(String.valueOf(thirdFlowerPrice));
                             }
                             flowerList.add(copiedThirdFlower);

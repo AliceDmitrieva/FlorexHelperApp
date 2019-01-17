@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5067d698-9aad-43ac-b6b4-76f7187224b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/florexhelper/fileutils/SupplyFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/florexhelper/fileutils/SupplyFileHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,18 +27,19 @@
     <session id="-1299416274">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="46" />
+          <entry key="project.closed" value="51" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.23" value="4" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="5" />
           <entry key="project.open.time.24" value="6" />
-          <entry key="project.open.time.25" value="7" />
-          <entry key="project.open.time.26" value="8" />
+          <entry key="project.open.time.25" value="8" />
+          <entry key="project.open.time.26" value="9" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.29" value="1" />
@@ -48,12 +50,13 @@
           <entry key="project.open.time.333" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="54" />
+          <entry key="project.opened" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -62,14 +65,14 @@
           <entry key="class" value="1" />
           <entry key="gradle" value="4" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="181" />
+          <entry key="java" value="188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="4" />
-          <entry key="JAVA" value="181" />
+          <entry key="JAVA" value="188" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -77,13 +80,13 @@
         <counts>
           <entry key="dummy" value="63" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="26341" />
+          <entry key="java" value="26566" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="26340" />
+          <entry key="JAVA" value="26565" />
           <entry key="PLAIN_TEXT" value="63" />
           <entry key="RegExp" value="1" />
         </counts>
@@ -96,10 +99,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/SupplyFileHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2881">
-              <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
+            <state relative-caret-position="-13">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/FileOutputCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/Launcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/AssortmentFileHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -377,11 +413,11 @@
         <option value="$PROJECT_DIR$/src/main/java/florexhelper/fileutils/AssortmentFileHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/florexhelper/Flower.java" />
         <option value="$PROJECT_DIR$/src/main/java/florexhelper/Launcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java" />
         <option value="$PROJECT_DIR$/src/main/java/florexhelper/gui/ButtonClickListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/florexhelper/fileutils/FileOutputCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/florexhelper/gui/Window.java" />
         <option value="$PROJECT_DIR$/src/main/java/florexhelper/fileutils/SupplyFileHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java" />
       </list>
     </option>
   </component>
@@ -396,8 +432,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -469,11 +503,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IdeaProjects/FlorexHelperApp/src/main/java/florexhelper/MainClass.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547476267335" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547763230519" />
     <property name="last.edited.regexp" value="3 qb" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -535,8 +571,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19127516" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20738254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -545,8 +582,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.36402267" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32577905" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.79320115" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35977337" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41926345" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -581,27 +618,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/florexhelper/Launcher.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/AssortmentFileHandler.java</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/AssortmentFileHandler.java</url>
-          <line>110</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/Launcher.java</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/FileOutputCreator.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -700,49 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/gui/Window.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3102">
           <caret line="147" column="68" selection-start-line="147" selection-start-column="68" selection-end-line="147" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6922#6923#0" expanded="true" />
-            <element signature="e#7006#7007#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/FileOutputCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/AssortmentFileHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3278">
-          <caret line="162" column="51" selection-start-line="162" selection-start-column="51" selection-end-line="162" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/gui/ButtonClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -750,9 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="2347" selection-start-line="2347" selection-end-line="2347" />
-          <folding>
-            <element signature="e#83485#83486#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,38 +770,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/Flower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding>
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/SupplyFileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2881">
-          <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
+        <state relative-caret-position="56">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/gui/ButtonClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/AssortmentFileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/fileutils/FileOutputCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/florexhelper/DataFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
