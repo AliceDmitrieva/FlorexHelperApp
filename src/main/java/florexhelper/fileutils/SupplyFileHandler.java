@@ -132,7 +132,7 @@ public class SupplyFileHandler {
 
     public static String setDoublePriceFirstFlower(String flowerPrice) {
         String firstPrice = null;
-        Pattern pricePattern = Pattern.compile("[0-1][,|.][1-9][0-9]");
+        Pattern pricePattern = Pattern.compile("[0-1][,|.][0-9][0-9]");
         Matcher pricePatternMatcher = pricePattern.matcher(flowerPrice);
 
         if (pricePatternMatcher.find()) {
@@ -143,7 +143,7 @@ public class SupplyFileHandler {
 
     public static String setDoublePriceSecondFlower(String flowerPrice) {
         String secondPrice = null;
-        Pattern pricePattern = Pattern.compile("[\\-|/][0-1][,|.][1-9][0-9]");
+        Pattern pricePattern = Pattern.compile("[\\-|/][0-1][,|.][0-9][0-9]");
         Matcher pricePatternMatcher = pricePattern.matcher(flowerPrice);
 
         if (pricePatternMatcher.find()) {
@@ -187,7 +187,7 @@ public class SupplyFileHandler {
         Pattern boxPattern = Pattern.compile("[1-9][0-9]?[\\s|\\t]?[\\s]?[Q|H][B]");
         Pattern titlePattern = Pattern.compile("[a-zA-Z]+[\\s?[a-zA-Z]?]+");
         Pattern lengthPattern = Pattern.compile("([\\s][1-9][0-9][0]?[\\-|/][1-9][0-9][0]?[\\-|/][1-9][0-9][0]?)|([\\s][1-9][0-9][0]?[\\-|/][1-9][0-9][0]?)|([\\s][1-9][0-9][0]?)");
-        Pattern pricePattern = Pattern.compile("([0-1][,|.][1-9][0-9][\\-|/][0-1][,|.][1-9][0-9][\\-|/][0-1][,|.][1-9][0-9])|([0-1][,|.][1-9][0-9][\\-|/][0-1][,|.][1-9][0-9])|([0-1][,|.][1-9][0-9])");
+        Pattern pricePattern = Pattern.compile("([0-1][,|.][0-9][0-9][\\-|/][0-1][,|.][0-9][0-9][\\-|/][0-1][,|.][0-9][0-9])|([0-1][,|.][0-9][0-9][\\-|/][0-1][,|.][0-9][0-9])|([0-1][,|.][0-9][0-9])");
 
         Matcher boxPatternMatcher = boxPattern.matcher(source);
         Matcher titlePatternMatcher = titlePattern.matcher(source);
