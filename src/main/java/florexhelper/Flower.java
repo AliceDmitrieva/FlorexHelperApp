@@ -4,8 +4,6 @@ import com.sun.istack.internal.NotNull;
 
 public class Flower {
 
-//    public static String plantationName;
-
     private double boxCount;
     private String title;
     private String length;
@@ -83,5 +81,25 @@ public class Flower {
 
     public void setPrice(String price) {
         this.price = price.replaceAll("-", "").replaceAll("/", "").trim();
+    }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+
+        if (!(obj instanceof Flower)) {
+            return false;
+        }
+
+        Flower flower = (Flower) obj;
+        return flower.getTitle().trim().equals(title.trim()) && flower.getLength().trim().equals(length.trim());
+    }
+
+    @Override
+    public String toString() {
+        return this.getTitle() + " " + this.getLength() + " " + this.getCapacity();
     }
 }

@@ -7,16 +7,11 @@ import florexhelper.gui.Window;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Launcher {
 
-    public static Window window;
-
     public static void main(String[] args) {
-    /*    String plantation = getUserInput();*/;
-
         Window.showWindow();
     }
 
@@ -33,10 +28,29 @@ public class Launcher {
                 resultList = getFlowerSupplyCapacityList(supplyList, capacityList);
             }
             resultList = setDefaultCapacity(resultList, plantationName);
+
+            for (Flower f : resultList) {
+                f.setCapacity(DataFormatter.formatCount(f));
+            }
+
+            findDuplicates(resultList);
             FileOutputCreator.createOutputFile(resultList, plantationName);
 
         } catch (IOException | InvalidFormatException e) {
             e.printStackTrace();
+        }
+    }
+
+    public static void findDuplicates (List<Flower> flowers) {
+        for (int i = 0; i < flowers.size(); i++) {
+            for (int j = 0; j < flowers.size(); j++) {
+                if (i != j) {
+                    if (flowers.get(i).equals(flowers.get(j))) {
+                        flowers.get(j).setCapacity(flowers.get(i).getCapacity() + flowers.get(j).getCapacity());
+                        flowers.remove(flowers.get(i));
+                    }
+                }
+            }
         }
     }
 
@@ -72,12 +86,4 @@ public class Launcher {
         }
         return flowerList;
     }
-
-       /* public static String getUserInput() {
-        Scanner reader = new Scanner(System.in);
-        System.out.println("Enter plantation name: ");
-        Flower.plantationName = reader.nextLine().toUpperCase();
-        reader.close();
-        return Flower.plantationName;
-    }*/
 }

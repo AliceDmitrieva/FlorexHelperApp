@@ -70,7 +70,7 @@ public class FileOutputCreator {
             row.createCell(7)
                     .setCellValue(25);
             row.createCell(8)
-                    .setCellValue(DataFormatter.formatCount(flower));
+                    .setCellValue(flower.getCapacity());
 
             for (int i = 1; i < 9; i++) {
                 row.getCell(i).setCellStyle(casualStyle);
